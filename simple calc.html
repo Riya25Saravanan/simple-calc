@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="calculator">
+<h3>Simple Calculator</h3>
+
+<input type="number" id="number1" placeholder="enter a number 1">
+<input type="number" id="number2" placeholder="enter a number 2">
+
+<div class="buttons">
+    <button onclick="calculate ('+')" >+</button>
+    <button onclick="calculate ('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate ('/')">/</button>
+</div>
+
+<p id="result"> The result is : </p>
+    </div>
+<script>
+function  calculate(operator){
+
+    const first = document.getElementById("number1").value;
+    const second = document.getElementById("number2").value;
+    const resultElement= document.getElementById("result");
+
+    const a=Number(first);
+    const b=Number(second);
+    let result;
+
+if (operator === "+"){
+    result= a+b;
+} else if (operator === "-"){
+    result= a-b;
+} else if (operator === "*"){
+    result = a*b;
+} else if (operator === "/"){
+    result= a/b;
+}
+
+resultElement.textContent = "The result is :" +result;
+
+}
+
+</script>
+</body>
+</html>

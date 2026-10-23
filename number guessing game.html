@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="box">
+        <h1 style="color: rgb(1, 1, 105);"><u>Number Guessing Game</u></h1>
+        <p class="text"> I have picked a number between 1 to 10.</p>
+        <p class="text"> Can you guess it?</p>
+        <div>
+            <input type="number" placeholder="Enter your guess(1-10)" class="input" id="guess" min="1" max="10">
+        </div>
+        <div>
+            <button onclick="checkGuess()">Guess</button>
+            <button onclick="restartGame()" > Hint</button>
+            <button> Reset</button>
+        </div>
+        <div style="background-color: rgb(224, 241, 241)">
+            <p class="text" id="message"> Make a guess!</p>
+            <p class="text" id="attempts"> You have only 5 attempts!</p>
+        </div>
+        <p class="text" id="attempts"> Attempts left: </p>
+    </div>
+
+
+    <script>
+function checkGuess(){
+    
+}
+
+
+    </script>
+    
+</body>
+</html>
