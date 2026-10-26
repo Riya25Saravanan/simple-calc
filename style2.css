@@ -1,0 +1,89 @@
+ body {
+            font-family: Arial, sans-serif;
+            background: #f3e8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            width: 350px;
+            max-width: calc(100% - 60px);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #0002;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6b21a8;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 8px;
+        }
+
+        input {
+            flex: 1;
+            min-width: 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #addBtn {
+            background: #7c3aed;
+            color: white;
+        }
+
+        #addBtn:hover {
+            background: #5b21b6;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            background: #f5f3ff;
+            border-radius: 6px;
+        }
+
+        .task-text {
+            flex: 1;
+            overflow-wrap: anywhere;
+            cursor: pointer;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .delete-btn {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        #taskCount {
+            color: #6b21a8;
+            text-align: center;
+        }
+   
